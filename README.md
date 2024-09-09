@@ -19,7 +19,7 @@ Let's create an application that allows users to register and authenticate using
 
 In order for a person to manage their money, they usually register with a bank and then carry out incoming and outgoing transactions.
 
-A person can be registered with several accounts and an account is linked to only one person. In addition, an account can make transactions only for other registred accounts in solution. Note: to simulate users' own deposit's or withdraw's, we will have a specific account with username "my-bank" and all money will be managed from there
+A person can be registered with several accounts and an account is linked to only one person. In addition, an account can make transactions related with own account.
 
 # Use cases
 
@@ -49,11 +49,7 @@ A person can be registered with several accounts and an account is linked to onl
 
 - For add a transaction, user needs to send an received and valid access_token in header and these properties:
   - value: a positive float value
-  - source: the username source of value
-  - destination: the username destination of value
 - When token isn't received or is invalid or expired, return a message with status "Unauthorized"
-- When token is valid and is a credit into user, own username must be used as destination
-- When token is valid and is a debit from user, own username must be used as source
 - When all rules are valid, add the transaction in database, recalculate values, save in user overview and return transaction id
 
 ## Cancel transaction
