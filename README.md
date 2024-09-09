@@ -11,9 +11,7 @@ It is expected that when you finish this project you will understand how the sep
 
 # Introduction
 
-A banking system works by recording incoming and outgoing transactions. These records together define the amount of money an account contains. It is also common for an account to have investments, which can generate income from time to time.
-
-Let's create an application that allows users to register and authenticate using email and password to identify each account, and that also allows the registration of inflows and outflows of amounts in reais (BRL). In addition, to increase the complexity, we will simulate an investment structure that, each day that an amount is invested, will yield a percentage (for example, 0.003 per day).
+A banking system works by recording incoming and outgoing transactions. These records together define the amount of money an account contains.
 
 # User History
 
